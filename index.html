@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weiqi's Page</title>
+    <!-- Import jQuery CDN. -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <!-- Import fontawesome personal kit. -->
+    <script src="https://kit.fontawesome.com/f18cfb16ff.js"></script>
+    <!-- Import bootstrap stuff. -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Import header font. -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Charmonman">
+    <!-- Import library that animates font awesome symbols. -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.3.0/font-awesome-animation.min.css">
+    <!-- Import project css and js. -->
+    <link rel="stylesheet" href="static/css/style.css">
+    <script type="text/javascript" src="static/js/index.js"></script>
+</head>
+<header>
+    <div id="header" class="container-fluid">
+        <div class="row">
+            <div id="navigator" class="offset-2" style="display: flex">
+                <div style="display: flex">
+                    <input type="button" class="nav-button" value="About" id="nav-about">
+                </div>
+                <div style="display: flex">
+                    <input type="button" class="nav-button" value="Projects" id="nav-project">
+                </div>
+                <div style="display: flex">
+                    <input type="button" class="nav-button" value="Education &amp; Experience" id="nav-edu-exp">
+                </div>
+                <div style="display: flex">
+                    <input type="button" class="nav-button" value="Skills" id="nav-skill">
+                </div>
+                <div style="display: flex">
+                    <input type="button" class="nav-button" value="Publications &amp; Awards" id="nav-pub-award">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div id="header-image" class="col-9" style="text-align: left">
+                <div class="row">
+                    <div class="col-9 offset-3" style="font-family: monospace">
+                        <p style="margin: 360px 0 0; font-size: 40px;">Hello, I'M</p>
+                        <p style="margin: 0; font-size: 80px"><b>Weiqi Feng</b></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3" style="text-align: center">
+                <img src="static/image/headshot.jpg" alt="static/image/404.gif" style="width: 150px; border-radius: 50%">
+                <h2><br>Weiqi Feng</h2>
+                <p>
+                    <br>MS/Ph.D. @ UMass Amherst
+                    <br>Major in Computer Science
+                    <br>Amherst, Massachusetts
+                </p>
+                <p>
+                    <br><i class="fas fa-mobile-alt faa-ring animated-hover"></i>
+                    <a href="tel:4134091314" style="color: whitesmoke; text-decoration: none; padding-left: 5px">
+                        (413)-409-1314
+                    </a>
+                    <br><i class="fas fa-envelope faa-horizontal animated-hover"></i>
+                    <a href="mailto:weiqifeng@umass.edu"
+                       style="color: whitesmoke; text-decoration: none; padding-left: 5px">
+                        weiqifeng@umass.edu
+                    </a>
+                </p>
+                <p>
+                    <a class="font-awesome" href="https://github.com/Weiqi97" target="_blank">
+                        <i class="fab fa-github-square fa-2x faa-tada animated-hover"></i></a>
+                    <a class="font-awesome" href="https://www.linkedin.com/in/weiqifeng97/" target="_blank">
+                        <i class="fab fa-linkedin fa-2x faa-tada animated-hover "></i></a>
+                </p>
+                <a href="file/CV.pdf" class="btn btn-lg btn-outline-info" target="_blank" style="margin-top: 20px">
+                    Download Resume
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+<body>
+<div class="container-fluid">
+    <div id="about" class="row special-content">
+        <div class="col-6 offset-3">
+            <p class="content-title">About</p>
+            <p class="content-subtitle">MY BACKGROUND</p>
+            <p style="font-size: 18px; word-break: normal">
+                With a passion for computer science and mathematics, I have both the skill set and professional
+                background necessary to dive deep into the programming world. In particular, my personal interest is in
+                cryptography. Though cryptography is invisible, it is all around us in the age of information. The art
+                of number manipulation fascinates me as well. Please browse my site to see all that I have to offer.
+            </p>
+        </div>
+    </div>
+
+    <div id="project" class="row main-content">
+        <div class="col-6 offset-3">
+            <p class="content-title">Projects</p>
+            <p class="content-subtitle" style="margin-bottom: 0">WHAT I'M WORKING ON</p>
+            <hr style="border: 2px solid #053061; margin: 0"/>
+            <div class="row">
+                <div class="col-2" style="text-align:center; margin-top: 10px">
+                    <i class="fas fa-pencil-ruler fa-2x faa-flash animated-hover"></i>
+                </div>
+                <div class="col-10 align-self-center">
+                    <b style="font-size: 14pt; font-family: monospace">Machine learning on encrypted data with
+                        Functional Encryption</b><br>
+                    While traditionally, learning on encrypted data is achieved by utilizing homomorphic encryption
+                    schemes, we have noticed recent research on Cryptography has led to the development of flexible
+                    encryption schemes that allow for function operation on encrypted data. In this work, we implement
+                    regression models that can train on encrypted data with a relatively new cryptographic primitive,
+                    functional encryption for inner-product. In this setting, data can be encrypted at the source using
+                    a functional encryption scheme and then aggregated at a data server for learning without the data
+                    being revealed to other sources.
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-2" style="margin-top: 10px; text-align: center">
+                    <i class="fas fa-pencil-ruler fa-2x faa-flash animated-hover"></i>
+                </div>
+                <div class="col-10 align-self-center">
+                    <b style="font-size: 14pt; font-family: monospace">Implementation of inner-product
+                        Function-revealing encryption</b><br>
+                    The new primitive function-revealing encryption (FRE) allows third parties to grab some ciphertexts
+                    and evaluate a pre-defined functionality on their plaintexts with a public oracle, regardless of
+                    whether they participated in the encryption scheme. This project implements a multi-client
+                    FRE with the inner-product functionality, where we assume each ciphertext provider would be a
+                    different client.
+                </div>
+            </div>
+
+
+            <p class="content-subtitle" style="margin-bottom: 0">WHAT I'VE CREATED</p>
+            <hr style="border: 2px solid #053061;  margin: 0"/>
+            <div class="row">
+                <div class="col-2" style="margin-top: 10px; text-align: center">
+                    <a class="font-awesome-project" href="https://github.com/WheatonCS/Lexos" target="_blank">
+                        <i class="fab fa-github fa-2x faa-pulse animated-hover "></i></a>
+                    <div style="font-family: monospace">Lexomics</div>
+                </div>
+                <div class="col-10 align-self-center">
+                    Lexos provides English Scholars a web-based workflow for text processing, statistical
+                    analysis and visualization of results when exploring digitized texts. Having 20,000 lines of python
+                    code in the back-end and 9000 lines of front-end code, Lexos has been developed over 10 years and
+                    will keep growing.
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-2" style="margin-top: 10px; text-align: center">
+                    <a class="font-awesome-project" href="https://github.com/Weiqi97/Cube-Crypto" target="_blank">
+                        <i class="fab fa-github fa-2x faa-pulse animated-hover "></i></a>
+                    <div style="font-family: monospace">Cube Encryption</div>
+                </div>
+                <div class="col-10 align-self-center">
+                    This project implements the Rubik's Cube symmetric encryption protocol described in this <a
+                        href="https://github.com/Weiqi97/Honor-Thesis">thesis</a>. It also includes an efficient key
+                    sharing protocol analyzed in the thesis.
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-2" style="margin-top: 10px; text-align: center">
+                    <a class="font-awesome-project" href="https://github.com/Weiqi97/Wheaton-Course-Selection"
+                       target="_blank">
+                        <i class="fab fa-github fa-2x faa-pulse animated-hover "></i></a>
+                    <div style="font-family: monospace">Wheaton Course Selection</div>
+                </div>
+                <div class="col-10 align-self-center">
+                    This project redesigns Wheaton College's course selection page to provide a more pleasant user
+                    experience, including but not restricted to allowing users to limit further searching criteria such
+                    as class time or professors.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="edu-exp" class="row main-content">
+    <div class="col-3 offset-3">
+        <p class="content-title">Education</p>
+        <p class="content-subtitle">WHAT I'VE LEARNED</p>
+        <p style="margin-bottom: 0"><b>UMass Amherst</b></p>
+        <p style="margin-bottom: 2px">Amherst, MA</p>
+        <p style="margin-bottom: 0">Sep 2019 - Anticipated May 2025</p>
+        <p style="margin-bottom: 0">MS/Ph.D., GPA: 3.91/4.0</p>
+        <p>Major in: Computer Science</p>
+
+        <p style="margin-bottom: 0"><b>Wheaton College</b></p>
+        <p style="margin-bottom: 2px">Norton, MA</p>
+        <p style="margin-bottom: 0">Sep 2015 &ndash; May 2019</p>
+        <p style="margin-bottom: 0">Bachelor of Arts, GPA: 3.85/4.0</p>
+        <p style="margin-bottom: 0">Majors in: Computer Science, Mathematics</p>
+        <p>Minor in: Statistics</p>
+    </div>
+    <div class="col-3">
+        <p class="content-title">Experience</p>
+        <p class="content-subtitle">WHERE I'VE WORKED</p>
+        <p style="margin-bottom: 0; word-break: normal"><b>Sep 2019 &mdash; Aug 2020</b>, UMass Cybersecurity Institute
+        </p>
+        <p><i>Graduate Research Assistant</i></p>
+        <p style="margin-bottom: 0; word-break: normal"><b>May 2018 &mdash; June 2019</b>, Wheaton College Lexomics
+            Research</p>
+        <p><i>Software Development Lead</i></p>
+        <p style="margin-bottom: 0; word-break: normal"><b>Sep 2017 &mdash; May 2019</b>, Wheaton College CS Department
+        </p>
+        <p><i>System Administrator</i></p>
+        <p style="margin-bottom: 0; word-break: normal"><b>Sep 2016 &mdash; Dec 2018</b>, Wheaton College Filene Center
+        </p>
+        <p><i>Calculus and Statistics Tutor</i></p>
+    </div>
+</div>
+
+<div id="skill" class="row main-content">
+    <div class="col-6 offset-3">
+        <p class="content-title">Skills</p>
+        <p class="content-subtitle">WHAT I BRING TO THE TABLE</p>
+        <div class="row skills">
+            <div class="col-3">Python</div>
+            <div class="col-9 no-padding-col">
+                <hr class="skilled-portion" style="opacity: 1"/>
+            </div>
+        </div>
+        <div class="row skills">
+            <div class="col-3">C / C++</div>
+            <div class="col-8 no-padding-col">
+                <hr class="skilled-portion" style="opacity: 1"/>
+            </div>
+            <div class="col-1 no-padding-col">
+                <hr class="non-skilled-portion"/>
+            </div>
+        </div>
+        <div class="row skills">
+            <div class="col-3">Haskell</div>
+            <div class="col-7 no-padding-col">
+                <hr class="skilled-portion" style="opacity: 1"/>
+            </div>
+            <div class="col-2 no-padding-col">
+                <hr class="non-skilled-portion"/>
+            </div>
+        </div>
+        <div class="row skills">
+            <div class="col-3">Mathematica</div>
+            <div class="col-7 no-padding-col">
+                <hr class="skilled-portion" style="opacity: 1"/>
+            </div>
+            <div class="col-2 no-padding-col">
+                <hr class="non-skilled-portion"/>
+            </div>
+        </div>
+        <div class="row skills">
+            <div class="col-3">R</div>
+            <div class="col-6 no-padding-col">
+                <hr class="skilled-portion" style="opacity: 1"/>
+            </div>
+            <div class="col-3 no-padding-col">
+                <hr class="non-skilled-portion"/>
+            </div>
+        </div>
+        <div class="row skills">
+            <div class="col-3">Go</div>
+            <div class="col-6 no-padding-col">
+                <hr class="skilled-portion" style="opacity: 1"/>
+            </div>
+            <div class="col-3 no-padding-col">
+                <hr class="non-skilled-portion"/>
+            </div>
+        </div>
+        <div class="row skills">
+            <div class="col-3">Swift</div>
+            <div class="col-6 no-padding-col">
+                <hr class="skilled-portion" style="opacity: 1"/>
+            </div>
+            <div class="col-3 no-padding-col">
+                <hr class="non-skilled-portion"/>
+            </div>
+        </div>
+        <div class="row skills">
+            <div class="col-3">JavaScript</div>
+            <div class="col-6 no-padding-col">
+                <hr class="skilled-portion" style="opacity: 1"/>
+            </div>
+            <div class="col-3 no-padding-col">
+                <hr class="non-skilled-portion"/>
+            </div>
+        </div>
+        <div class="row skills">
+            <div class="col-12 no-padding-col">
+                <hr style="border: 2px solid #053061; margin-top: 15px; margin-bottom: 15px; margin-left: 10px"/>
+            </div>
+        </div>
+        <div class="row skills">
+            <div class="col-3">Numpy</div>
+            <div class="col-8 no-padding-col">
+                <hr class="skilled-portion" style="opacity: 1"/>
+            </div>
+            <div class="col-1 no-padding-col">
+                <hr class="non-skilled-portion"/>
+            </div>
+        </div>
+        <div class="row skills">
+            <div class="col-3">Pandas</div>
+            <div class="col-8 no-padding-col">
+                <hr class="skilled-portion" style="opacity: 1"/>
+            </div>
+            <div class="col-1 no-padding-col">
+                <hr class="non-skilled-portion"/>
+            </div>
+        </div>
+        <div class="row skills">
+            <div class="col-3">Flask</div>
+            <div class="col-7 no-padding-col">
+                <hr class="skilled-portion" style="opacity: 1"/>
+            </div>
+            <div class="col-2 no-padding-col">
+                <hr class="non-skilled-portion"/>
+            </div>
+        </div>
+        <div class="row skills">
+            <div class="col-3">PyTorch</div>
+            <div class="col-7 no-padding-col">
+                <hr class="skilled-portion" style="opacity: 1"/>
+            </div>
+            <div class="col-2 no-padding-col">
+                <hr class="non-skilled-portion"/>
+            </div>
+        </div>
+        <div class="row skills">
+            <div class="col-3">SQL</div>
+            <div class="col-6 no-padding-col">
+                <hr class="skilled-portion" style="opacity: 1"/>
+            </div>
+            <div class="col-3 no-padding-col">
+                <hr class="non-skilled-portion"/>
+            </div>
+        </div>
+        <div class="row skills">
+            <div class="col-3">Angular</div>
+            <div class="col-6 no-padding-col">
+                <hr class="skilled-portion" style="opacity: 1"/>
+            </div>
+            <div class="col-3 no-padding-col">
+                <hr class="non-skilled-portion"/>
+            </div>
+        </div>
+        <div class="row skills">
+            <div class="col-3">Node.js</div>
+            <div class="col-6 no-padding-col">
+                <hr class="skilled-portion" style="opacity: 1"/>
+            </div>
+            <div class="col-3 no-padding-col">
+                <hr class="non-skilled-portion"/>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="pub-award" class="row main-content">
+    <div class="col-3 offset-3">
+        <p class="content-title">Publications</p>
+        <p class="content-subtitle">WHAT I'VE PUBLISHED</p>
+        <p>Feng. W., LeBlanc D. M. “Top-10 Suggestions from a Decade of Managing Undergraduate Software Teams.” The
+            Journal of Computing Sciences in College, V34(6), April 2019, Pages 70-83.</p>
+        <p>Zhang. C., Feng. W., Steffens. E., Landaluce d. A., Kleinman. S., LeBlanc D. M. “Lexos 2017: Building
+            Reliable Software in Python.” The Journal of Computing Sciences in College, v33(6), 124-134.</p>
+    </div>
+    <div class="col-3">
+        <p class="content-title">Awards</p>
+        <p class="content-subtitle">WHERE I SHINE</p>
+        <ul>
+            <li>Fred Kollett Prize in Mathematics &amp; Computer Science</li>
+            <li>Madeleine F. Clark Wallace Mathematics Prize</li>
+            <li>Mars Faculty-Student Research Grant</li>
+            <li>Balfour Scholarship</li>
+            <li>Phi Beta Kappa</li>
+            <li>May fellow</li>
+        </ul>
+    </div>
+</div>
+
+<div class="row align-items-center special-content">
+    <div class="col-2 offset-2" style="text-align: center">
+        <p style="font-family: monospace; font-size: 20px; margin: 0">
+            <i style="margin: 0">I would love to</i><br>
+            <i style="margin: 0">hear from you.</i>
+        </p>
+
+    </div>
+    <div class="col-2" style="text-align: center">
+        <p style="margin: auto;">
+            <i class="fas fa-mobile-alt faa-ring animated-hover"></i>
+            <a href="tel:4134091314" style="color: #212529; text-decoration: none; padding-left: 5px">
+                (413)-409-1314
+            </a>
+            <br><i class="fas fa-envelope faa-horizontal animated-hover"></i>
+            <a href="mailto:weiqifeng@umass.edu"
+               style="color: #212529; text-decoration: none; padding-left: 5px">
+                weiqifeng@umass.edu
+            </a>
+        </p>
+    </div>
+    <div class="col-2" style="text-align: center">
+        <a href="file/CV.pdf" class="btn btn-lg btn-outline-info" target="_blank">
+            Download Resume
+        </a>
+    </div>
+    <div class="col-2" style="text-align: center">
+        <button id="back-to-top" class="faa-parent animated-hover" style="border: none; background: none">
+            <i class="fas fa-angle-double-up fa-3x faa-bounce animated-hover"></i>
+        </button>
+    </div>
+</div>
+</body>
+
+<footer>
+    <div class="container-fluid" style="background-color: #053061">
+        <div class="row">
+            <div id="footer" class="col align-middle" style="text-align: center">
+                <p style="margin: 0">
+                    <i class="far fa-copyright" style="padding-top: 3px;"></i> 2021 By Weiqi Feng
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+</html>
